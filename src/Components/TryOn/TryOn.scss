@@ -1,0 +1,107 @@
+@import '../../App.scss';
+
+
+.tryon-main{
+    // background: linear-gradient(86deg, #C2CDDC 1.77%, #8DA1BD 75.45%);
+    background: linear-gradient(86deg, #333333 1.77%, #181818 75.45%);
+    @media (max-width: 576px) {
+      background: linear-gradient(86deg, #333333 1.77%, #181818 75.45%);
+      }
+    img{
+      @media (max-width: 576px) {
+        padding-right: 0;
+      }
+    }
+    
+}
+
+.tryon{
+    // display: flex;
+    // align-items: center;
+    // height: 600px;
+    // position: relative;
+        h2{
+            font-size: 55px;
+            font-weight: 500;
+            // color: $dark-blue;
+            color: #fff;
+            @media (max-width: 1200px) {
+              font-size: 45px;
+          }
+            @media (max-width: 992px) {
+                font-size: 36px;
+            }
+            @media (max-width: 576px) {
+                font-size: 24px;
+                color: #fff;
+            }
+        }
+        h5{
+            padding: 10px 0 30px;            
+            margin: 0;
+            font-size: 17px;
+            // color: $light-black;
+            color: #fff;
+            font-weight: 400;
+            line-height: 24px;
+            width: 60%;
+            @media (max-width: 992px) {
+                font-size: 16px;
+                width: 60%;
+            }
+            @media (max-width: 768px) {
+              width: 60%;
+            }
+            @media (max-width: 576px) {
+              width: 60%;
+              // text-align: justify;
+              font-size: 14px;
+              line-height: 18px;
+              padding: 0 0 10px;
+              color: #fff;
+            }
+        }
+        @media screen and (max-width: 1700px) {
+            height: 500px;
+          }
+        @media screen and (max-width: 1400px) {
+            height: 500px;
+          }
+        @media screen and (max-width: 1200px) {
+            height: 360px;
+          }
+        @media (max-width: 768px) {
+          // padding: 50px 30px 0 !important;
+          height: auto;
+        }
+        @media (max-width: 576px) {
+          // padding: 30px 30px 0 !important;
+          height: auto;
+        }
+        @media screen and (min-width: 1400px) {
+          min-width: 1320px !important;
+        }
+}
+
+.tryon-sideimg{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    @media screen and (max-width: 1700px) {
+        max-height: 500px;
+      }
+    @media screen and (max-width: 1400px) {
+        max-height: 500px;
+      }
+    @media screen and (max-width: 1200px) {
+        max-height: 360px;
+        text-align: center;
+      }
+    @media screen and (max-width: 768px) {
+        // display: none;
+      }
+    img{
+      width: auto;
+      height: -webkit-fill-available;
+    }
+}

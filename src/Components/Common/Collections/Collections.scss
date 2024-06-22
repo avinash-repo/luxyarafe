@@ -1,0 +1,46 @@
+@import '../../../App.scss';
+
+.collections{
+    text-align: center;
+    padding: 100px 0;
+      h2{
+          color: $dark-blue;
+          font-size: 40px;
+          font-weight: 700;
+          @media (max-width: 768px) {
+              font-size: 28px;
+            }
+      }
+      h5{
+          padding: 12px 0;
+          margin: 0;
+          font-size: 16px;
+          color: $light-black;
+          font-weight: 400;
+          @media (max-width: 768px) {
+              padding: 10px 0 0;
+            }
+      }
+      img{
+        @media (max-width: 768px) {
+          // width: 100%;
+        }
+      }
+      @media (max-width: 1400px) {
+        padding: 50px 0;
+      }
+      @media (max-width: 768px) {
+          padding: 30px 10px;
+        }
+      
+}
+
+.collections-list{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    // gap: 50px;
+    @media (max-width: 768px) {
+        padding-top: 30px;
+      }
+}

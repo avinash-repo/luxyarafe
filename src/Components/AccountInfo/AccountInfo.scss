@@ -1,0 +1,53 @@
+@import '../../App.scss';
+
+.account-info-main{
+    width: 60%;
+    @media screen and (max-width: 1700px) {
+        width: 70%;
+    }
+    @media screen and (max-width: 1400px) {
+        width: 80%;
+    }
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+    }
+}
+
+.account-info-name{
+    margin-bottom: 30px;
+    @media screen and (max-width: 576px) {
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 16px;
+        color: $light-black;
+    }
+    input{
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid #CECECE;
+    }
+    select {
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid #CECECE;
+    }
+}
+.gender-main{
+    display: flex;
+}
+.gender-radio{
+    margin-right: 50px;
+    input{
+        transform: scale(1.3);
+        margin-right: 5px;
+    }
+}
+.verified-abs{
+    position: absolute;
+    color: green;
+    font-size: 16px;
+    font-weight: 500;
+    right: 20px;
+    top: 40px;
+}

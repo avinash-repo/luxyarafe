@@ -1,0 +1,164 @@
+@import'../../App.scss';
+
+.img-block-100 {
+    display: block;
+    width: 100%;
+}
+.whatabout{
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    h3{
+        color: #c0c0c0;
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+        @media (max-width: 1700px) {
+            font-size: 24px;
+            margin: 0;
+          }
+        @media (max-width: 1400px) {
+            font-size: 20px;
+          }
+        @media (max-width: 768px) {
+            font-size: 24px;
+            margin: 0;
+          }
+    }
+    h2{
+        color: $dark-blue;
+        font-size: 48px;
+        font-weight: 700;
+        @media (max-width: 1200px) {
+            font-size: 42px;
+          }
+    }
+    h4{
+        border-bottom: 1px solid #4D4D4D;
+        width: 200px;
+        margin: 20px 0 30px;
+        @media (max-width: 1400px) {
+            margin: 10px 0 20px;
+          }
+    }
+    p{
+        color: #383838;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: justify;
+        @media (max-width: 1700px) {
+            font-size: 18px;
+            line-height: 24px;
+          }
+        @media (max-width: 1400px) {
+            font-size: 17px;
+            line-height: 22px;
+          }
+        @media (max-width: 1200px) {
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 12px;
+          }
+        @media (max-width: 768px) {
+            font-size: 18px;
+            line-height: 24px;
+          }
+    }
+    img{
+        @media (max-width: 992px) {
+            display: none;
+          }    
+    }
+    @media (max-width: 1400px) {
+        padding-top: 60px;
+      }
+    @media (max-width: 992px) {
+      padding: 30px 20px;
+      letter-spacing: -0.5px;
+      }
+}
+.mission-main{
+    margin: 50px auto 100px;
+    background-image: url('../../Images/mission-watermark.webp');
+    background-repeat: no-repeat;
+    background-position: center 50px;
+    padding-top: 0;
+    @media (max-width: 1400px) {
+      // padding-top: 60px;
+    }
+  @media (max-width: 992px) {
+    padding: 0 20px;
+    letter-spacing: -0.5px;
+    margin: 0 auto;
+    }
+}
+
+.two-boxes-main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 100px auto;
+    @media (max-width: 992px) {
+      margin: 30px auto;
+      }
+    @media (max-width: 576px) {
+      padding: 0 30px;
+      margin: 0 auto;
+      }
+}
+.two-boxes-header{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    @media (max-width: 992px) {
+      padding-bottom: 10px;
+      }
+      h2{
+
+      }
+      p{
+        color: #383838;
+        font-size: 18px;
+        line-height: 28px;
+        @media (max-width: 992px) {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+}
+.about-left-box{
+    text-align: left;
+    h2{
+        color: #4D4D4D;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        @media (max-width: 992px) {
+          padding: 20px 0 10px;
+          margin: 0;
+          }
+    }
+    p{
+        color: #4D4D4D;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        @media (max-width: 992px) {
+          text-align: justify;
+          font-size: 15px;
+          line-height: 22px;
+          }
+    }
+}
+.shop-light{
+  font-weight: 500;
+  cursor: pointer;
+  &:hover{
+    text-decoration: underline;
+  }
+  @media (max-width: 992px) {
+    margin-bottom: 30px;
+    }
+}

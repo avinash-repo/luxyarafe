@@ -1,0 +1,31 @@
+@import '../../App.scss';
+
+.pagecover {
+        background: #f0eae2;
+        color: #393939;
+        margin-bottom: 37px;
+        padding: 49px;
+        text-align: center;
+    }
+
+    #faq_container {
+        padding: 20px 0 40px !important;
+    }
+
+    .boldfont {
+        color: #505050;
+        font-size: 24px;
+        font-weight: 600;
+        padding-bottom: 0;
+    }
+
+    #faqUi {
+        list-style-type: none !important;
+        padding: 0 20px !important;
+        li{
+            margin: 30px 0 !important;
+            p{
+                font-size: 18px !important;
+            }
+        }
+    }

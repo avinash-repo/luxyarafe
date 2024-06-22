@@ -1,0 +1,38 @@
+@import '../../App.scss';
+
+.my-wishlist-main{
+    background-color: #fff;
+    padding: 40px 30px;
+    margin-top: 20px;
+    @media screen and (max-width: 1400px) {
+        padding: 20px 10px;
+    }
+    @media screen and (max-width: 1200px) {
+        padding: 20px 10px;
+    }
+    @media screen and (max-width: 992px) {
+        padding: 20px 10px;
+    }
+    h1{
+        font-size: 30px;
+        color: $light-black;
+        padding-bottom: 30PX;
+        @media screen and (max-width: 768px) {
+            font-size: 20px;
+        }
+    }
+}
+
+.wish-products{
+    display: flex;
+    flex-wrap: wrap;
+
+    h4{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    h5{
+        font-size: 18px;
+        font-weight: 400;
+    }
+}

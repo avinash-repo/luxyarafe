@@ -1,0 +1,128 @@
+@import '../../App.scss';
+
+.benefits-banner-main {
+  background-color: #F0EAE2;
+
+  @media screen and (max-width: 768px) {
+    padding: 30px 0;
+  }
+  @media screen and (max-width: 576px) {
+    padding: 0;
+    background: linear-gradient(86deg, #0f79b1 1.77%, #032140 75.45%);
+  }
+}
+
+.benefits-banner {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+
+  @media screen and (max-width: 1700px) {
+    height: 600px;
+  }
+
+  @media screen and (max-width: 1400px) {
+    height: 500px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    height: 400px;
+  }
+
+  @media screen and (max-width: 769px) {
+    height: auto;
+  }
+}
+
+.benefits-image {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+
+  img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 769px) {
+    display: none;
+  }
+}
+
+.benefits-text {
+  width: 50%;
+  padding-left: 30px;
+  h5 {
+    padding: 0px 20px 30px 0;
+    margin: 0;
+    font-size: 17px;
+    color: $light-black;
+    font-weight: 400;
+    line-height: 24px;
+
+    @media screen and (max-width: 992px) {
+      padding: 0 0 20px;
+      font-size: 15px;
+    }
+
+    @media screen and (max-width: 576px) {
+      padding: 0 0 20px;
+      font-size: 14px;
+      line-height: 18px;
+      color: #fff;
+    }
+  }
+
+  h1 {
+    color: $dark-blue;
+    font-size: 55px;
+    font-weight: 500;
+
+    span {
+      color: $dark-blue;
+      font-weight: 500;
+    }
+
+    @media screen and (max-width: 1400px) {
+      font-size: 44px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      font-size: 36px;
+    }
+
+    @media screen and (max-width: 992px) {
+      font-size: 30px;
+    }
+
+    @media screen and (max-width: 769px) {
+      font-size: 32px;
+      padding-bottom: 10px;
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: 24px;
+      padding-bottom: 0;
+      color: #fff;
+    }
+  }
+
+  @media screen and (max-width: 1700px) {
+    padding-right: 10%;
+  }
+
+  @media screen and (max-width: 1400px) {
+    padding-right: 5%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding-right: 0;
+  }
+
+  @media screen and (max-width: 769px) {
+    width: 100%;
+    padding: 30px 20px;
+  }
+}

@@ -1,0 +1,83 @@
+
+
+.JeelizVTOWidget {
+    width: 100vw;
+    height: 550px;
+    max-width: 100vh;
+    position: relative;
+    margin: 50px auto 100px;
+    h5{
+      text-align: center;
+      padding-bottom: 10px;
+      color: #8a8a8a;
+      font-size: 16px;
+    }
+  }
+  .JeelizVTOWidgetCanvas {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px 4px #00000026;
+  }
+  .JeelizVTOWidgetControls {
+    position: absolute;
+    right: 10px;
+    // bottom: 50px;
+    z-index: 2;
+    // width: 100%;
+  }
+  .JeelizVTOWidgetButton {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ddd;
+    font-weight: bold;
+    font-variant: small-caps;  
+    font-size: 16px;
+    padding: 10px 8px;
+    min-width: 120px;
+    border: none;
+    margin: 8px;
+    border-radius: 5px;
+  }
+  .JeelizVTOWidgetAdjustEnterButton {
+    
+  }
+  .JeelizVTOWidgetAdjustNotice {
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    z-index: 3;
+    font-size: 16px;
+    bottom: 0;  
+    justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: none;
+  }
+  .JeelizVTOWidgetAdjustExitButton {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+  }
+  .JeelizVTOWidgetLoading {
+    position: fixed;
+    z-index: 4;
+    cursor: wait;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .JeelizVTOWidgetLoadingText {
+    color: white;
+    font-size: 32pt;
+    margin-top: 40vh;
+  }
+  .JeelizVTOWidgetChangeModelContainer {
+    bottom: -30px;
+  }

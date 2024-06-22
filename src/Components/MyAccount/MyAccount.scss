@@ -1,0 +1,67 @@
+
+.my-account-main{
+    display: flex;
+    // gap: 20px;
+    @media screen and (max-width: 576px) {
+        flex-direction: column;
+    }
+}
+.my-account-box1{
+    border-radius: 5px;
+    background: #F9FAFB;
+    padding: 25px 20px;
+    // margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border: 5px solid #fff;
+    @media screen and (min-width: 576px) and (max-width: 992px) {
+        width:49%;
+    }
+    @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+        margin-right: 0;
+        padding: 15px 20px;
+    }
+}
+.my-account-left{
+    h2{
+        font-size: 36px;
+        margin: 0;
+        color: #636363;
+        font-weight: 700;
+        margin-bottom: 10px;
+        @media screen and (max-width: 768px) {
+            font-size: 20px;
+        }
+    }
+}
+.my-account-left-b{
+    display: flex;
+    align-items: center;
+    img{
+        padding-right: 5px;
+    }
+    h3{
+        color: #636363;
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0;
+    }
+}
+.account-cart-icon{
+    color: #636363;
+    font-size: 24px;
+    padding-right: 10px;
+}
+.my-account-right{
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+    img{
+        // padding-left: 50px;
+    }
+}

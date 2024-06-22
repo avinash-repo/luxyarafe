@@ -1,0 +1,240 @@
+@import '../../../App.scss';
+
+
+.copyright {
+    text-align: center;
+    font-size: 16px;
+    color: $light-black;
+    padding: 20px 0;
+}
+
+.footer-main {
+    background-color: #f6f6f6;
+
+    .footer {
+        display: flex;
+        gap: 50px;
+        padding: 80px 0;
+        border-bottom: 1px solid #e8e8e8;
+        justify-content: space-between;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            padding: 0;
+            padding-bottom: 20px;
+            margin: 0;
+
+            @media (max-width: 768px) {
+                padding-bottom: 10px;
+            }
+
+            a {
+                font-size: 16px;
+                padding-right: 15px;
+                color: $light-black;
+                cursor: pointer;
+
+                &:hover {
+                    font-weight: 500;
+                    color: $dark-blue;
+                }
+            }
+        }
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+            padding: 30px;
+            gap: 10px;
+            border-bottom: 0;
+            padding: 30px 30px 10px;
+        }
+
+        .footer-col {
+            width: 20%;
+
+            h2 {
+                color: $light-black;
+                font-size: 20px;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                @media (max-width: 768px) {
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+            }
+
+            @media (max-width: 992px) {
+                width: 100%;
+                border-bottom: 1px solid #0000001a;
+                padding-bottom: 10px;
+            }
+
+            ul {
+                li {
+                    img {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-mobile-main {
+    margin-bottom: 70px;
+    display: none;
+    background-color: #f6f6f6;
+
+    @media(max-width:768px) {
+        display: block;
+    }
+
+
+    .footer {
+        display: flex;
+        gap: 50px;
+        padding: 80px 0;
+        border-bottom: 1px solid #e8e8e8;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            padding: 0;
+            padding-bottom: 20px;
+            margin: 0;
+
+            @media (max-width: 768px) {
+                padding-bottom: 10px;
+            }
+
+            a {
+                font-size: 16px;
+                padding-right: 15px;
+                color: $light-black;
+                cursor: pointer;
+
+                &:hover {
+                    font-weight: 500;
+                    color: $dark-blue;
+                }
+            }
+        }
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+            padding: 30px;
+            gap: 10px;
+            border-bottom: 0;
+            padding: 30px 30px 10px;
+        }
+
+        .footer-col {
+            width: 20%;
+
+            h2 {
+                color: $light-black;
+                font-size: 20px;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                @media (max-width: 768px) {
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+            }
+
+            @media (max-width: 992px) {
+                width: 100%;
+                border-bottom: 1px solid #0000001a;
+                padding-bottom: 10px;
+            }
+
+            ul {
+                li {
+                    img {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.social-ico a{
+    width: 28px;
+    height: 28px;
+}
+
+// .footer-main .container{
+//     max-width: 1600px;
+// }
+.font-icon {
+    padding-right: 15px;
+    font-size: 24px;
+    color: $dark-blue;
+}
+
+.footer-mobile {
+    @media(max-width:992px) {
+        position: absolute;
+        transform: scaleY(0);
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.footer-mobile-active {
+
+    @media(max-width:992px) {
+        transform: scaleY(1);
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.footer-social {
+    background-color: $dark-blue;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+@media (max-width:768px) {
+    .footer-main {
+        display: none;
+    }
+}
+
+.mobile-link {
+    border: none;
+    margin-bottom: 50px;
+
+    .card-header {
+        background: transparent;
+        font-size: 20px;
+        color: #000;
+        font-weight: 600;
+    }
+
+    .icon {
+        margin-right: 0.5rem;
+    }
+}

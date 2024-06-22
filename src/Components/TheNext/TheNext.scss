@@ -1,0 +1,123 @@
+@import '../../App.scss';
+
+.the-next-main{
+    background-color: #F0EAE2;
+    background-repeat: no-repeat;
+    background-position: 60px 50px ;
+    @media screen and (max-width: 769px) {
+        height: auto;
+        padding: 60px 10px;
+        background-position: 210px 220px;
+        background-size: 40%;
+      }
+    @media screen and (max-width: 576px) {
+        padding: 30px 10px;
+        display: none;
+      }
+}
+.the-next{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 1700px) {
+        height: 500px;
+      }
+    @media screen and (max-width: 1400px) {
+        height: 460px;
+      }
+    @media screen and (max-width: 1200px) {
+        height: 400px;
+      }
+    @media screen and (max-width: 992px) {
+        height: 360px;
+      }
+    @media (max-width: 768px) {
+        height: auto;
+    }
+    @media screen and (min-width: 1400px) {
+        min-width: 1320px !important;
+    }
+}
+.the-next-image{
+    width: 50%;
+    max-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 1700px) {
+      height: 500px;
+    }
+    @media screen and (max-width: 1400px) {
+        height: 460px;
+      }
+    @media screen and (max-width: 1200px) {
+        height: 400px;
+      }
+    @media screen and (max-width: 992px) {
+        height: 360px;
+      }
+    @media (max-width: 768px) {
+        display: none;
+      }
+    img{
+        width: 100%;
+    }
+}
+
+.the-next-text{
+    width: 50%;
+    h5{
+        padding: 10px 0 20px;
+        margin: 0;
+        font-size: 17px;
+        color: $light-black;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    h1{
+        color: $dark-blue;
+        font-size: 55px;
+        font-weight: 500;
+        padding-bottom: 30px;
+        span{
+            font-size: 55px;
+            color: $dark-blue;
+            font-weight: 500;
+        }
+        @media screen and (max-width: 1700px) {
+            font-size: 56px;
+            padding-bottom: 10px;
+          }
+        @media screen and (max-width: 1400px) {
+            font-size: 48px;
+            padding-bottom: 10px;
+          }
+        @media screen and (max-width: 1200px) {
+            font-size: 40px;
+            padding-bottom: 10px;
+          }
+        @media screen and (max-width: 992px) {
+            font-size: 36px;
+          }
+        @media screen and (max-width: 768px) {
+            font-size: 32px;
+            padding-bottom: 10px;
+            line-height: 28px;
+          }
+        @media screen and (max-width: 576px) {
+            font-size: 24px;
+            padding-bottom: 10px;
+            line-height: 16px;
+          }
+    }
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: 0 10px;
+      }
+}
+.bold-font{
+    font-size: 120px !important;
+    line-height: 100px !important;
+    font-weight: bolder !important;
+    color: #6B6263 !important;
+}

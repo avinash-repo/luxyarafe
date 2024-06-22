@@ -1,0 +1,241 @@
+$light-black: #4d4d4d;
+$dark-blue: #032140;
+
+
+// Button styles
+@mixin editbutton ($margin, $backgroundColor, $color, $border, $padding) {
+  background-color: $backgroundColor;
+  color: $color;
+  padding: 20px 40px; 
+  border-radius: 5px;
+  border: $border;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: $margin;
+  padding: $padding;
+  transition: 0.5s;
+}
+
+.button {
+  @include editbutton (0, $dark-blue, #fff, 1px solid $dark-blue, 20px 40px);
+  @media screen and (max-width: 1400px) {
+    padding: 10px;
+  }
+  @media screen and (max-width: 1200px) {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+  &:hover{
+    background-color: transparent;
+    color: $dark-blue;
+    border: 1px solid $dark-blue;
+  }
+}
+.light-blue-button {
+  @include editbutton (0, #2194E4, #fff, none, 20px 40px);
+}
+.light-white-button {
+  @include editbutton (0, #fff, $dark-blue, 1px solid $dark-blue, 20px 40px);
+  @media screen and (max-width: 1400px) {
+    padding: 10px;
+  }
+  @media screen and (max-width: 1200px) {
+    padding: 15px 20px;
+    font-size: 13px;
+  }
+  &:hover{
+    background-color: $dark-blue;
+    color: #fff;
+  }
+}
+.product-button {
+  @include editbutton (0, $dark-blue, #fff, 1px solid $dark-blue, 15px 10px);
+  @media screen and (max-width: 1400px) {
+    padding: 10px;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 1200px) {
+    padding: 10px 0;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  @media screen and (max-width: 576px) {
+    width: 100%;
+    padding: 20px;
+    border-radius: 0;
+  }
+  &:hover{
+    background-color: transparent;
+    color: $dark-blue;
+    border: 1px solid $dark-blue;
+  }
+}
+.product-buttons .product-button  {
+  @media screen and (max-width: 1200px) {    
+    margin-bottom: 0px;
+  }
+}
+.product-light-white-button {
+  @include editbutton (0, #fff, $dark-blue, 1px solid $dark-blue, 15px 10px);
+  @media screen and (max-width: 1400px) {
+    padding: 10px;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 1200px) {
+    padding: 10px 0;
+  }
+  @media screen and (max-width: 576px) {
+    width: 100%;
+    padding: 20px;
+    border-radius: 0;
+    border: 0;
+  }
+  &:hover{
+    background-color: $dark-blue;
+    color: #fff;
+  }
+}
+
+.container{
+  @media screen and (min-width: 1700px) {
+    max-width: 1600px;
+    min-width: 1600px;
+  }
+}
+.mr-20{
+  margin-right: 20px;
+  @media screen and (max-width: 1200px) {
+    margin-right: 10px;
+  }
+  @media screen and (max-width: 576px) {
+    margin: 0;
+  }
+}
+.mr-30{
+  margin-right: 30px;
+}
+.mt-30{
+  margin-top: 30px;
+}
+.mb-30{
+  margin-bottom: 30px;
+}
+.mt-10{
+  margin-top: 10px;
+}
+.relative{
+  position: relative;
+}
+.flex{
+  display: flex;
+}
+.only-mobile{
+  display: none;
+  @media screen and (max-width: 992px) {
+    display: block;
+  }
+}
+.flex-aligncenter{
+  display: flex;
+  align-items: center;
+}
+.flex-flexwrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+.only-desktop{
+  display: block;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.grid-4-mobile{
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+}
+.pr-50{
+  padding-right: 50px;
+}
+.back-button{
+  color: #383838;
+  font-size: 14px;
+  padding-right: 5px;
+}  
+.entercode .button {
+  padding: 0 40px;
+}
+
+hr {
+  margin: 10px 0;
+}
+
+.all_product_pagination{
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: baseline !important;
+  p {
+    margin: 0px !important;
+  }
+  @media (max-width: 375px) {
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+  }
+}
+
+
+
+
+
+
+.rc-anchor-normal {
+  height: 74px;
+  width: auto !important;
+}
+
+.rc-anchor-normal-footer {
+  padding-right: 25px;
+}
+.rc-anchor-light {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rc-anchor{
+  box-shadow: none !important;
+}
+
+.rc-anchor-light.rc-anchor-normal, .rc-anchor-light.rc-anchor-compact {
+  border: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+#rc-anchor-container{
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.rc-anchor-normal {
+  height: 74px;
+  width: 400px;
+}
+
+li u{
+  font-size: 24px;
+    color: #4d4d4d;
+    margin: 0;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+dl, ol, ul{
+  padding: 0;
+  margin: 0;
+}

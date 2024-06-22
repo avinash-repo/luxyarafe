@@ -1,0 +1,104 @@
+@import '../../App.scss';
+
+.track-flow-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    @media screen and (max-width: 576px) {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+      }
+}
+.order-placed{
+    text-align: center;
+    h2{
+        font-size: 20px;
+        font-weight: 700;
+        color: $light-black;
+        margin: 0;
+    }
+}
+.processing-time-main{
+    margin: 80px 0;
+    @media screen and (max-width: 576px) {
+        margin: 30px 0;
+    }
+    h2{
+        text-align: center;
+    }
+}
+.processing-time{
+    padding: 0 25px;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+        padding: 0 10px;
+      }
+    @media screen and (max-width: 576px) {
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+      }
+    p{
+        font-size: 16px;
+        color: #4d4d4d;
+        margin: 0;
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+          }
+          @media screen and (max-width: 576px) {
+            width:45%;
+          }  
+    }
+}
+.processing-line{
+    width: 400px;
+    height: 1px;
+    background-color: #4d4d4d;
+    margin: 10px 0;
+    @media screen and (max-width: 1200px) {
+        width: 200px;
+      }
+    @media screen and (max-width: 768px) {
+        width: 150px;
+      }
+    @media screen and (max-width: 576px) {
+        width: 1px;
+        height: 50px;
+        margin: 10px;
+      }
+}
+.processing-time-table-main{
+    margin: 30px auto;
+    td{
+        padding: 20px 30px;
+        font-size: 16px;
+        color: #1b1b1b;
+        font-weight: 400;
+        @media screen and (max-width: 768px) {
+            padding: 20px 10px;
+            font-size: 14px;
+          }
+    }
+}
+.processing-time-table-select{
+    background-color: #F0EAE2 !important;
+    font-weight: 500 !important;
+    border: 1px solid #4d4d4d1a !important;
+}
+
+.tablet-tbody{
+    @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+      }
+    
+}
+.tablet-tbody-row{
+    @media screen and (max-width: 768px) {
+        display: grid;
+        align-items: start;
+      }
+    
+}

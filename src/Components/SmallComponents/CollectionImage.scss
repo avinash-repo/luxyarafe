@@ -1,0 +1,78 @@
+@import '../../App.scss';
+
+.collection-image .image img {
+    @media (max-width: 1400px) {
+        width: 100%;
+    }
+
+    // @media (max-width: 1200px) {
+    //     width: 70%;
+    // }
+    // @media (max-width: 768px) {
+    //     width: 90%;
+    //   }
+}
+
+.collection-image .image {
+    padding-bottom: 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    overflow: hidden;
+
+    @media (max-width: 1400px) {
+        width: 170px;
+        height: 170px;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        overflow: hidden;
+        // height: 85px;
+        background: #eaeaea;
+        width: 100%;
+        object-fit: contain;
+        aspect-ratio: 1/1;
+    }
+}
+
+.collection-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 992px) {
+        // margin-bottom: 20px;
+    }
+    h4 {
+        font-size: 18px;
+        padding-top: 10px;
+        color: $light-black;
+
+        @media (max-width: 768px) {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 15px;
+            letter-spacing: 0.5px;
+            text-align: center;
+            color: #4D4D4D;
+            margin: 0;
+        }
+        
+    }
+}
+
+.trend-slider-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    img {
+        width: 80%;
+    }
+}

@@ -1,0 +1,137 @@
+@import '../../App.scss';
+
+.formContainer{
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+        padding: 30px 20px;
+    }
+}
+.form-title{
+    font-size: 24px;
+    color: $light-black;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+.contact-details-box-timings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-lable-input{
+    h2{
+        color: $light-black;
+        font-size: 14px;
+    }
+    input{
+        padding: 20px 20px;
+        border-radius: 5px;
+        border: 1px solid #CECECE;
+        font-size: 16px;
+        color: $light-black;
+        margin-bottom: 30px;
+        width: 90%;
+        ::placeholder{
+            color: red;
+        }
+        @media screen and (max-width: 992px) {
+            width: 100%;
+        }
+    }
+    select{
+        padding: 20px 20px;
+        border-radius: 5px;
+        border: 1px solid #CECECE;
+        font-size: 14px;
+        color: #585858;
+        margin-bottom: 8px;
+        width: 90%;
+        @media screen and (max-width: 992px) {
+            width: 100%;
+        }
+    }
+}
+.contact-details-box-main{
+    @media screen and (max-width: 768px) {
+        padding: 0 30px;
+    }
+}
+.contact-details-box-timings{
+    p{
+        font-size: 18px;
+        color: $light-black;
+        margin: 0;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
+.contact-details-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 20px;
+    h2{
+        font-size: 24px;
+        color: $light-black;
+        font-weight: 500;
+        margin: 0;
+        padding: 20px 0;
+        @media screen and (max-width: 992px) {
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        padding: 20px;
+    }
+
+}
+.b-30{
+    border-right: 30px solid #f9fafb;
+    @media screen and (max-width: 1200px) {
+        border-right: 15px solid #f9fafb;
+    }
+    @media screen and (max-width: 768px) {
+        border-right: 0;
+    }
+}
+.formContainer-right{
+    img{
+        @media screen and (max-width: 1700px) {
+            width: 100%;
+        }
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
+    }
+}
+
+.error{
+    color:red
+}
+.contact-tel .react-tel-input {   
+    width: 90%;
+    margin-bottom: 30px;
+    @media screen and (max-width: 992px) {
+        width: 100%;
+    }
+}
+.shop-name{
+    font-size: 24px;
+    color: #000;
+    text-align: left;
+    // font-family: Quicksand light 300;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-style: normal;
+}
+
+.address-shop{
+    margin: 40px 0px;
+}
+
+.content_subhead{
+    font-size :20px;
+}

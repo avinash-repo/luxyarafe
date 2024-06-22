@@ -1,0 +1,61 @@
+@import '../../../App.scss';
+
+.small-banner{
+    // height: 350px;
+    // display: flex;
+    // align-items: center;
+    // position: relative;
+    // background-color: antiquewhite;
+}
+.small-hero-text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 9;
+    @media screen and (max-width: 576px) {
+        position: relative;
+        transform: none;
+        left: 0;
+        right: 0;
+    }
+    h2{
+        color: #ffffff;
+        font-size: 48px;
+        font-weight: 700;
+        @media screen and (max-width: 576px) {
+            color: #032140;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+    h3{
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 400;
+        width: 50%;
+    }
+}
+.small-hero-img{
+    // width: 300px;
+    max-height: 350px;
+    overflow: hidden;
+    @media screen and (max-width: 576px) {
+        max-height: 250px;
+        height: 250px;
+        overflow: hidden;
+        display: none;
+    }
+    img{
+        width: 100%;
+    }
+}
+.small-hero-text-img-main{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    @media screen and (max-width: 576px) {
+        justify-content: center
+    }
+}

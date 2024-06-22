@@ -1,0 +1,86 @@
+@import '../../../App.scss';
+
+.personal-sidebar-main {
+    background-color: #fff;
+
+    @media screen and (max-width: 768px) {
+        background-color: transparent;
+        padding: 0 !important;
+    }
+
+    padding: 40px 30px 80px;   
+
+    @media screen and (max-width: 992px) {
+        padding: 40px 0 80px 20px;
+    }
+    @media screen and (max-width: 992px) {
+        padding: 20px 0 5px 20px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+        color: $light-black;
+        padding-bottom: 30px;
+
+        @media screen and (max-width: 992px) {
+            padding-bottom: 20px;
+        }
+    }
+
+    ul {
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        li {
+            margin-bottom: 30px;
+            font-size: 18px;
+            font-weight: 400;
+            cursor: pointer;
+
+            @media screen and (max-width: 992px) {
+                font-size: 16px;
+            }
+
+            @media screen and (max-width: 768px) {
+                background: #fff;
+                padding: 5px;
+                height: 80px;
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 15px;
+                color: #032140;
+                font-size: 15px;
+                font-weight: 500;
+
+                &:nth-child(1) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.personal-sidebar-icon {
+    color: #838383;
+    font-size: 20px;
+    padding-right: 10px;
+
+    @media screen and (max-width: 992px) {
+        font-size: 15px;
+        padding-right: 2px;
+    }
+
+    @media screen and (max-width: 768px) {
+        color: #032140;
+        font-size: 20px !important;
+    }
+}
