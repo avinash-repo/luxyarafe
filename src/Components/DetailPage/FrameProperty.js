@@ -106,7 +106,7 @@ const FrameProperty = () => {
             <li>
               Weight: <span>{productData?.[0]?.weightData?.value} g</span>
             </li>
-            <li>
+            {/* <li>
               Gender:{" "}
               <span>
                 {productData?.[0]?.genderDataArr
@@ -131,11 +131,11 @@ const FrameProperty = () => {
             </li>
             <li>
               Temple Length: <span>{productData?.[0]?.temple_length} mm</span>
-            </li>
+            </li> */}
           </ul>
         </div>
         {console.log("uiFrameData",uiFrameData)}
-        <div className="frame-property-boxes">
+        <div className="frame-property-boxes d-none">
           {uiFrameData &&
             uiFrameData.map((val, index) => (
               <div className="frame-property-box">

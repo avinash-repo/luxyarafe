@@ -51,7 +51,7 @@ const ShippingContent = () => {
           <h2>Shipping and Delivery</h2>
           <p>
             We aim to process and ship orders promptly within 4–7 days. However,
-            shipping times may vary depending on your location.
+            shipping times may vary depending on your location but surely order will be deliver to the buyer 10 to 15 days .
           </p>
           <p>
             Vuezen is not responsible for delays or issues caused by third-party

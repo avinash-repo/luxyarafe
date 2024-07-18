@@ -104,7 +104,7 @@ const DetailPage = () => {
       <ImageDetailsSection reviewData={data} handleScroll={handleScroll} />
       <DetailBanner />
       <FrameProperty />
-      <FrameSizes />
+      {/* <FrameSizes /> */}
       <Reviews
         data={data}
         updatedState={updatedState}
